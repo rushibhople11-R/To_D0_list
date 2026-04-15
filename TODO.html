@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #f9f9f9; color: #222; }
+    h1 { color: #333; }
+    section { margin-top: 1.5rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.5rem 0; }
+    .task::before { content: "☐ "; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>To Do List</h1>
+  <section>
+    <h2>Today</h2>
+    <ul>
+      <li class="task">Review existing project goals and update priorities</li>
+      <li class="task">Add new tasks and due dates for the week</li>
+      <li class="task">Clean up repository structure or documentation</li>
+    </ul>
+  </section>
+  <section>
+    <h2>In Progress</h2>
+    <ul>
+      <li class="task">Begin implementation of the highest-priority task</li>
+      <li class="task">Create the first working prototype or initial script</li>
+      <li class="task">Validate progress and log any blockers</li>
+    </ul>
+  </section>
+  <section>
+    <h2>This Week</h2>
+    <ul>
+      <li class="task">Finish planning next feature or data analysis task</li>
+      <li class="task">Start implementation or data collection for priority item</li>
+      <li class="task">Review progress and adjust estimates</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Later</h2>
+    <ul>
+      <li class="task">Organize notes and keep the task list current</li>
+      <li class="task">Schedule a regular review session</li>
+      <li class="task">Prepare next steps for the next milestone</li>
+    </ul>
+  </section>
+</body>
+</html>
