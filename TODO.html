@@ -11,11 +11,24 @@
     ul { list-style: none; padding: 0; }
     li { margin: 0.5rem 0; }
     .task::before { content: "☐ "; color: #555; }
+    nav { background: #333; padding: 1rem; margin: -2rem -2rem 2rem -2rem; }
+    nav ul { display: flex; justify-content: center; list-style: none; padding: 0; margin: 0; }
+    nav li { margin: 0 1rem; }
+    nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background 0.3s; }
+    nav a:hover { background: #555; }
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#today">Today</a></li>
+      <li><a href="#in-progress">In Progress</a></li>
+      <li><a href="#this-week">This Week</a></li>
+      <li><a href="#later">Later</a></li>
+    </ul>
+  </nav>
   <h1>To Do List</h1>
-  <section>
+  <section id="today">
     <h2>Today</h2>
     <ul>
       <li class="task">Review existing project goals and update priorities</li>
@@ -23,7 +36,7 @@
       <li class="task">Clean up repository structure or documentation</li>
     </ul>
   </section>
-  <section>
+  <section id="in-progress">
     <h2>In Progress</h2>
     <ul>
       <li class="task">Begin implementation of the highest-priority task</li>
@@ -31,7 +44,7 @@
       <li class="task">Validate progress and log any blockers</li>
     </ul>
   </section>
-  <section>
+  <section id="this-week">
     <h2>This Week</h2>
     <ul>
       <li class="task">Finish planning next feature or data analysis task</li>
@@ -39,7 +52,7 @@
       <li class="task">Review progress and adjust estimates</li>
     </ul>
   </section>
-  <section>
+  <section id="later">
     <h2>Later</h2>
     <ul>
       <li class="task">Organize notes and keep the task list current</li>
